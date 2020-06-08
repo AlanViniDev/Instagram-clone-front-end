@@ -1,0 +1,263 @@
+/*Inicio do estilo da página home*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+@font-face{
+    font-family: Billabong;
+    src: url(Billabong.ttf);
+}
+#form, #imagem{
+    width:100%;
+    height:100px;
+}
+body{
+    background-color: rgba(222, 233, 233, 0.3);
+}
+#form{
+    background-color: white;
+    width: 360px;
+    height: 390px;
+    position: relative;
+    top:73px;
+    border-color: #DCDCDC;
+    border-width: 0.5px;
+    border-style: solid;
+    display: inline-block;
+    z-index: 99;
+    right:-200px;
+}
+#form h1{
+    text-align: center;
+    font-family: Billabong;
+    font-size: 55px;
+    position: relative;
+    top:26px;
+}
+#form input {
+    position: relative;
+    top:55px;
+    font-size: 10.5px;
+    border-style: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color:#DCDCDC;
+    display: block;
+    margin:  auto;
+    border-radius: 3px;
+    width:270px;
+    height:40px;
+    background: rgba(250, 246, 246, 0.3);
+    border-style: solid;
+    border-width:1px;
+}
+#form input , button , h1 , #linha01, #linha02, #entrarFC, #esqueceu,#cadastrese,#app,#appstore,#googleplay{
+    z-index: 2;
+}
+#form #senha{
+    position: relative;
+    top:60px;
+}
+#form button{
+    border-radius: 3px;
+    position: relative;
+    top:75px;
+    margin: auto;
+    width:270px;
+    height:30px;
+    cursor: pointer;
+    color:white;
+    background-color: rgb(85, 143, 252);
+    font-size:13px;
+    font-weight: bolder;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#linha01 {
+    height:1px;
+    width:105px;
+    background-color: rgb(147, 187, 240);
+    position: relative;
+    top:95px;
+    left:-81px;
+}
+#linha02 {
+    height:1px;
+    width:110px;
+    background-color: rgb(147, 187, 240);
+    position: relative;
+    top:80px;
+    left:80px;
+}
+#ou{
+    position: relative;
+    top:90px;
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(95, 99, 104);
+    font-weight: bolder;
+    font-size: 12px;
+    font-weight: bolder;
+}
+#entrarFC{
+    color:#576d9e;
+    text-align: center;
+    position: relative;
+    top:110px;
+    z-index: 10;
+    font-weight: bolder;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#entrarFC, label{
+    cursor: pointer;
+}
+#esqueceu{
+    color:#586e9c;
+    text-align: center;
+    position: relative;
+    top:140px;
+    font-size:12px;
+    z-index: 10;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+}
+#imagem{
+    position: relative;
+    top:-655px;
+    left:-242px;
+}
+#cadastrese{
+    background-color: white;
+    width: 360px;
+    height: 60px;
+    left: 200px;
+    top: 83px;
+    position: relative;
+    border-color: #DCDCDC;
+    border-width: 0.5px;
+    border-style: solid;
+    font-size:14px;
+    text-align: center;
+}
+#frase1{
+    color:black;
+}
+#frase2{
+    color:#7190d4;
+    cursor: pointer;
+    font-weight: bolder;
+}
+#frase1, #frase2{
+    position: relative;
+    top:23px;
+    font-size: 14px;
+}
+ #appstore{
+    left:50px;
+    top: 150px;
+    position: relative;
+}
+#googleplay{
+    left:210px;
+    top: 101px;
+    position: relative;
+}
+#aplicativo{
+    width:10px;
+    height:10px;
+}
+#app{
+    text-align: center;
+    top:65px;
+    position: relative;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(63, 60, 60);
+}
+#rodape2{
+    width:250px;
+    top:140px;
+    position: relative;
+    right:369.5px;
+}
+#rodape1,#rodape2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color:rgb(124, 123, 123);
+    font-weight: bolder;
+}
+#rodape1, ul, li{
+    right:8.5px;
+    top:48px;
+    display: inline-block;
+    color:rgb(71, 69, 69);
+    padding: 6px;
+    z-index: 10;
+    position: relative;
+}
+li{
+    cursor: pointer;
+}
+
+/*Responsividade da página home*/
+@media  (max-width: 1016px) {
+#imagem{
+    /*desaparece com a imagem*/
+    display: none;
+}
+#form{
+    background-color: white;
+    width: 360px;
+    height: 390px;
+    position: relative;
+    top:40px;
+    border-color: #DCDCDC;
+    border-width: 0.5px;
+    border-style: solid;
+    display: inline-block;
+    z-index: 99;
+    right: 1px;
+}
+#cadastrese{
+        background-color: white;
+        width: 360px;
+        height: 60px;
+        left: -1px;
+        top: 50px;
+        position: relative;
+        border-color: #DCDCDC;
+        border-width: 0.5px;
+        border-style: solid;
+        font-size:14px;
+        text-align: center;
+}
+ #appstore{
+    left:-150px;
+    top: 100px;
+    position: relative;
+}
+#googleplay{
+    left:10px;
+    top: 51px;
+    position: relative;
+}
+#rodape1{
+    width:350px;
+    margin: 0;
+    padding: 10;
+    text-align: center;
+   right:-15px;
+}
+#rodape2{
+    right: 5px;
+    top:185px;
+    height:30px;
+}
+}
+
+/*Fim do estilo da home*/
